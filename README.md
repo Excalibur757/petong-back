@@ -1,59 +1,45 @@
 # PetOng
 Projeto Acadêmico com objetivo de desenvolver um aplicativo que auxilie nas dificuldades de uma ONG específica
 
-## ✅ **Backend (Node.js + Express API)**
-
-### 📦 Comandos usados:
-```bash
-npm init -y
-npm install express cors
-```
-
-### 📜 Dependências necessárias:
-- `express` — framework de servidor web.
-- `cors` — middleware para habilitar CORS (cross-origin requests).
-
-### 📝 Como instalar:
-```bash
-npm install express cors
-```
-
+## ✅ **Backend (Node.js + Express API + Dotenv + Cors + Bcrypt + Nodemailer + Sqlite3)**
 ---
-
 ## ✅ **Mobile (Expo + React Native + Router + Icons)**
-
-### 🚀 Criado com:
-```bash
-npx create-expo-app@latest
-```
-
-Esse comando já instala:
-- `react-native`
-- `react`
-- `expo`
-
-### 📦 Instalações extras feitas:
-```bash
-npm install @expo/vector-icons expo-router
-```
-
-### 📜 Dependências necessárias:
-- `@expo/vector-icons` — pacote de ícones (Ionicons, MaterialIcons, etc.).
-- `expo-router` — sistema de rotas baseado em arquivos, estilo Next.js.
-
 ---
-
-## 🔧 Resumo final (para quem for clonar o projeto):
-
-### Para rodar o **backend**:
+## 🔧 Para quem for clonar o projeto:
+---
+⚠️ Importante: O backend requer um arquivo .env para o envio de e-mails funcionar corretamente.
+Um arquivo de exemplo (.env.example) está disponível no repositório para facilitar a configuração.
+---
 ```bash
-cd backend
+# .env caso queria só copiar aqui
+EMAIL_REMETENTE=seu_email@gmail.com
+EMAIL_SENHA="sua_senha_app_gmail"
+EMAIL_RECEBEDOR=email_da_ong@gmail.com
+```
+---
+### Para rodar o **BACKEND**:
+```bash
+cd petong-back
 npm install
+node app.js
 ```
 
-### Para rodar o **mobile**:
+## Pegue o APP desse aplicativo para funcionar por completo:
 ```bash
-cd mobile
+https://github.com/Excalibur757/petong-app
+```
+
+### Para rodar o **APP**:
+```bash
+cd petong-app
 npm install
 npx expo start
+```
+---
+### 🗂️ Para garantir que o aplicativo e o backend se comuniquem corretamente em ambiente local, mantenha as duas pastas no mesmo diretório raiz.
+
+```bash
+📁 meu-projeto/
+├── 📱 petong-app/     # Aplicativo mobile 
+└── 🖥️ petong-back/    # Backend 
 ```
